@@ -15,3 +15,11 @@ echo $form->submit('Modifier'); //Créer un bouton pour soumettre le formulaire 
 echo $form->end(); //fermer le formulaire
 
 ?>
+
+Le début d'un formulaire <form ...>
+Un input text <input type="text"...>
+Un select <select ...> ...</select>
+Un bouton submit <button type="submit"></button>
+Un textarea <textarea ...> ...</textarea>
+Un radio button <input type="radio"...>
+Une checkbox <input type="checkbox">
