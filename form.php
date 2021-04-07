@@ -2,13 +2,10 @@
 
 class Form{
 
-
-// garder en memoire
     private $data;
 
     public $surround = 'p';
 
-//creation constructeur
     public function __construct($data= array()) {
 
         $this->data=$data;
@@ -20,24 +17,21 @@ class Form{
         return "<{$this->surround}>{$html}</{$this->surround}>";
     } 
 
-
     private function getValue($index){
 
-        return $this->data[index];
+        return isset($this->data[$index]) ? $this->data[$index] : null;
     }
-
 
     public function input($name){
         return $this->surround (
             '<input type="text" name="' . $name . '" value="' .$this->getValue($name). '">'
         );
 
-
     }
 
     public function submit(){
 
-       return $this->surround ( '<button type="submit">envoyer</button>');
+        return $this->surround ( '<button type="submit">envoyer</button>');
 
     }
 }
