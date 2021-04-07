@@ -9,7 +9,7 @@ class Form{
     public $surround = 'p';
 
 //creation constructeur
-    public function __construct($data) {
+    public function __construct($data= array()) {
 
         $this->data=$data;
 
