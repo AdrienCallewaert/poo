@@ -21,11 +21,16 @@ class Form{
     } 
 
 
+    private function getValue($index){
 
+        return $this->data[index];
+    }
 
 
     public function input($name){
-        return $this->surround ('<input type="text" name="' . $name . '">');
+        return $this->surround (
+            '<input type="text" name="' . $name . '" value="' .$this->getValue($name). '">'
+        );
 
 
     }
